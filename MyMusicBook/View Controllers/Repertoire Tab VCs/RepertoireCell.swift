@@ -10,6 +10,11 @@ import UIKit
 
 class RepertoireCell: UITableViewCell {
 
+    @IBOutlet weak var composerCellImage: UIImageView!
+    @IBOutlet weak var pieceNameCellLabel: UILabel!
+    @IBOutlet weak var opusCellLabel: UILabel!
+    @IBOutlet weak var composerCellLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

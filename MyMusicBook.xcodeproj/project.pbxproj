@@ -9,23 +9,39 @@
 /* Begin PBXBuildFile section */
 		CA00914E23D4672D00142E9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA00914D23D4672D00142E9B /* AppDelegate.swift */; };
 		CA00915023D4672D00142E9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA00914F23D4672D00142E9B /* SceneDelegate.swift */; };
-		CA00915223D4672D00142E9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA00915123D4672D00142E9B /* ViewController.swift */; };
 		CA00915523D4672D00142E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA00915323D4672D00142E9B /* Main.storyboard */; };
 		CA00915823D4672D00142E9B /* MyMusicBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA00915623D4672D00142E9B /* MyMusicBook.xcdatamodeld */; };
 		CA00915A23D4672D00142E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA00915923D4672D00142E9B /* Assets.xcassets */; };
 		CA00915D23D4672D00142E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA00915B23D4672D00142E9B /* LaunchScreen.storyboard */; };
+		CA00916523D4681B00142E9B /* RepertoireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA00916423D4681B00142E9B /* RepertoireViewController.swift */; };
+		CA00916723D4685B00142E9B /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA00916623D4685B00142E9B /* PracticeViewController.swift */; };
+		CA0287E723DAE68F000EC18A /* PracticeDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0287E623DAE68F000EC18A /* PracticeDetailsVC.swift */; };
+		CA1E480023D5F807004DD8A6 /* RepDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E47FF23D5F807004DD8A6 /* RepDetailsViewController.swift */; };
+		CA2ADC3523D6360800F12D46 /* RepertoireCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2ADC3423D6360800F12D46 /* RepertoireCell.swift */; };
+		CA7C150F23DB4B3000373718 /* GlossaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C150E23DB4B3000373718 /* GlossaryCell.swift */; };
+		CA7CB25223DAF54A00D755A9 /* PracticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7CB25123DAF54A00D755A9 /* PracticeCell.swift */; };
+		CAB52BAD23DA31870008ECE2 /* GlossaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB52BAC23DA31870008ECE2 /* GlossaryViewController.swift */; };
+		CAB52BAF23DA382A0008ECE2 /* GlossaryDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB52BAE23DA382A0008ECE2 /* GlossaryDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CA00914A23D4672D00142E9B /* MyMusicBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusicBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA00914A23D4672D00142E9B /* My Music Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Music Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA00914D23D4672D00142E9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA00914F23D4672D00142E9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA00915123D4672D00142E9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA00915423D4672D00142E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA00915723D4672D00142E9B /* MyMusicBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyMusicBook.xcdatamodel; sourceTree = "<group>"; };
 		CA00915923D4672D00142E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA00915C23D4672D00142E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA00915E23D4672D00142E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA00916423D4681B00142E9B /* RepertoireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepertoireViewController.swift; sourceTree = "<group>"; };
+		CA00916623D4685B00142E9B /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
+		CA0287E623DAE68F000EC18A /* PracticeDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PracticeDetailsVC.swift; path = "MyMusicBook/View Controllers/PracticeDetailsVC.swift"; sourceTree = SOURCE_ROOT; };
+		CA1E47FF23D5F807004DD8A6 /* RepDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepDetailsViewController.swift; sourceTree = "<group>"; };
+		CA2ADC3423D6360800F12D46 /* RepertoireCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RepertoireCell.swift; path = "MyMusicBook/View Controllers/Repertoire Tab VCs/RepertoireCell.swift"; sourceTree = SOURCE_ROOT; };
+		CA7C150E23DB4B3000373718 /* GlossaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GlossaryCell.swift; path = "MyMusicBook/View Controllers/Glossary Tab VCs/GlossaryCell.swift"; sourceTree = SOURCE_ROOT; };
+		CA7CB25123DAF54A00D755A9 /* PracticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PracticeCell.swift; path = MyMusicBook/PracticeCell.swift; sourceTree = SOURCE_ROOT; };
+		CAB52BAC23DA31870008ECE2 /* GlossaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GlossaryViewController.swift; path = MyMusicBook/GlossaryViewController.swift; sourceTree = SOURCE_ROOT; };
+		CAB52BAE23DA382A0008ECE2 /* GlossaryDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GlossaryDetailsVC.swift; path = MyMusicBook/GlossaryDetailsVC.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +66,7 @@
 		CA00914B23D4672D00142E9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA00914A23D4672D00142E9B /* MyMusicBook.app */,
+				CA00914A23D4672D00142E9B /* My Music Book.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,7 +76,7 @@
 			children = (
 				CA00914D23D4672D00142E9B /* AppDelegate.swift */,
 				CA00914F23D4672D00142E9B /* SceneDelegate.swift */,
-				CA00915123D4672D00142E9B /* ViewController.swift */,
+				CA00916823D4687700142E9B /* View Controllers */,
 				CA00915323D4672D00142E9B /* Main.storyboard */,
 				CA00915923D4672D00142E9B /* Assets.xcassets */,
 				CA00915B23D4672D00142E9B /* LaunchScreen.storyboard */,
@@ -68,6 +84,38 @@
 				CA00915623D4672D00142E9B /* MyMusicBook.xcdatamodeld */,
 			);
 			path = MyMusicBook;
+			sourceTree = "<group>";
+		};
+		CA00916823D4687700142E9B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA7CB25123DAF54A00D755A9 /* PracticeCell.swift */,
+				CA0287E623DAE68F000EC18A /* PracticeDetailsVC.swift */,
+				CA00916623D4685B00142E9B /* PracticeViewController.swift */,
+				CA3E476623DA2DF200EAB14F /* Glossary Tab VCs */,
+				CA6DF1A623D60D26005358C6 /* Repertoire Tab VCs */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CA3E476623DA2DF200EAB14F /* Glossary Tab VCs */ = {
+			isa = PBXGroup;
+			children = (
+				CAB52BAE23DA382A0008ECE2 /* GlossaryDetailsVC.swift */,
+				CAB52BAC23DA31870008ECE2 /* GlossaryViewController.swift */,
+				CA7C150E23DB4B3000373718 /* GlossaryCell.swift */,
+			);
+			path = "Glossary Tab VCs";
+			sourceTree = "<group>";
+		};
+		CA6DF1A623D60D26005358C6 /* Repertoire Tab VCs */ = {
+			isa = PBXGroup;
+			children = (
+				CA00916423D4681B00142E9B /* RepertoireViewController.swift */,
+				CA1E47FF23D5F807004DD8A6 /* RepDetailsViewController.swift */,
+				CA2ADC3423D6360800F12D46 /* RepertoireCell.swift */,
+			);
+			path = "Repertoire Tab VCs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,7 +135,7 @@
 			);
 			name = MyMusicBook;
 			productName = MyMusicBook;
-			productReference = CA00914A23D4672D00142E9B /* MyMusicBook.app */;
+			productReference = CA00914A23D4672D00142E9B /* My Music Book.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,9 +189,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA00915223D4672D00142E9B /* ViewController.swift in Sources */,
 				CA00914E23D4672D00142E9B /* AppDelegate.swift in Sources */,
+				CA1E480023D5F807004DD8A6 /* RepDetailsViewController.swift in Sources */,
+				CAB52BAD23DA31870008ECE2 /* GlossaryViewController.swift in Sources */,
+				CAB52BAF23DA382A0008ECE2 /* GlossaryDetailsVC.swift in Sources */,
+				CA0287E723DAE68F000EC18A /* PracticeDetailsVC.swift in Sources */,
+				CA7C150F23DB4B3000373718 /* GlossaryCell.swift in Sources */,
+				CA7CB25223DAF54A00D755A9 /* PracticeCell.swift in Sources */,
+				CA2ADC3523D6360800F12D46 /* RepertoireCell.swift in Sources */,
+				CA00916523D4681B00142E9B /* RepertoireViewController.swift in Sources */,
 				CA00915823D4672D00142E9B /* MyMusicBook.xcdatamodeld in Sources */,
+				CA00916723D4685B00142E9B /* PracticeViewController.swift in Sources */,
 				CA00915023D4672D00142E9B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +352,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = personal.mdogus.MyMusicBook;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "My Music Book";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,7 +370,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = personal.mdogus.MyMusicBook;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "My Music Book";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
