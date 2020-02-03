@@ -102,4 +102,46 @@ class GlossaryViewController: UIViewController, UITableViewDelegate, UITableView
             destination.chosenGlossaryID = selectedGlossaryID
         }
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "GlossaryItems")
+            
+            let idString = glossaryIDs[indexPath.row].uuidString
+            
+            fetchRequest.predicate = NSPredicate(format: "id = %@", idString)
+            fetchRequest.returnsObjectsAsFaults = false
+            
+            do {
+                let results = try context.fetch(fetchRequest)
+                if results.count > 0 {
+                    for result in results as! [NSManagedObject] {
+                        if let id = result.value(forKey: "id") as? UUID {
+                            if id == glossaryIDs[indexPath.row] {
+                                context.delete(result)
+                                glossaryIDs.remove(at: indexPath.row)
+                                glossaryNameArray.remove(at: indexPath.row)
+                                descriptionArray.remove(at: indexPath.row)
+                                
+                                self.tableView.reloadData()
+                                
+                                do {
+                                    try context.save()
+                                } catch {
+                                    print("Error")
+                                }
+                                
+                                break
+                            }
+                        }
+                    }
+                }
+            } catch {
+                print("Fetch error")
+            }
+        }
+    }
 }

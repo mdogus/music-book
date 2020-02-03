@@ -127,4 +127,49 @@ class RepertoireViewController: UIViewController, UITableViewDelegate, UITableVi
             destination.chosenRepertoireID = selectedRepertoireID
         }
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Repertoires")
+            
+            let idString = repertoireIDs[indexPath.row].uuidString
+            
+            fetchRequest.predicate = NSPredicate(format: "id = %@", idString)
+            fetchRequest.returnsObjectsAsFaults = false
+            
+            do {
+                let results = try context.fetch(fetchRequest)
+                if results.count > 0 {
+                    for result in results as! [NSManagedObject] {
+                        if let id = result.value(forKey: "id") as? UUID {
+                            if id == repertoireIDs[indexPath.row] {
+                                context.delete(result)
+                                repertoireIDs.remove(at: indexPath.row)
+                                pieceNameArray.remove(at: indexPath.row)
+                                formArray.remove(at: indexPath.row)
+                                opusArray.remove(at: indexPath.row)
+                                composerArray.remove(at: indexPath.row)
+                                imageArray.remove(at: indexPath.row)
+                                
+                                self.repertoireTableView.reloadData()
+                                
+                                do {
+                                    try context.save()
+                                } catch {
+                                    print("Error")
+                                }
+                                
+                                break
+                            }
+                        }
+                    }
+                }
+            } catch {
+                print("Fetch error")
+            }
+        }
+    }
 }
